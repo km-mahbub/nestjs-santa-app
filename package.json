@@ -5,10 +5,14 @@
   "author": "",
   "private": true,
   "license": "UNLICENSED",
+  "main": "src/main.ts",
+  "engines": {
+    "node": "16.x"
+  },
   "scripts": {
     "build": "nest build",
     "format": "prettier --write \"src/**/*.ts\" \"test/**/*.ts\"",
-    "prestart": "cd client && yarn install && yarn build && cp -r dist ../public && cd ..",
+    "prestart": "cd client && npm install && npm run build && cp -r dist ../public && cd ..",
     "start": "nest start",
     "start:dev": "nest start --watch",
     "start:debug": "nest start --debug --watch",
