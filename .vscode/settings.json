@@ -1,0 +1,16 @@
+{
+  "workbench.colorCustomizations": {
+    "activityBar.background": "#113239",
+    "titleBar.activeBackground": "#184650",
+    "titleBar.activeForeground": "#F7FCFD"
+  },
+  "cSpell.words": ["nestjs", "Fastify", "prestart"],
+  "files.eol": "\n",
+  "debug.terminal.clearBeforeReusing": true,
+  "editor.rulers": [85],
+  "prettier.printWidth": 85,
+  "prettier.singleQuote": false,
+  "prettier.trailingComma": "all",
+  "javascript.preferences.importModuleSpecifier": "relative",
+  "typescript.preferences.importModuleSpecifier": "relative"
+}
