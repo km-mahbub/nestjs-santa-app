@@ -12,7 +12,7 @@
   "scripts": {
     "build": "nest build",
     "format": "prettier --write \"src/**/*.ts\" \"test/**/*.ts\"",
-    "prestart": "cd client && npm install && npm run build && cp -r dist ../public && cd ..",
+    "prestart": "cd client && npm install && npm run build && cp -r dist ../public && rm -rf node_modules && cd ..",
     "start": "nest start",
     "start:dev": "nest start --watch",
     "start:debug": "nest start --debug --watch",

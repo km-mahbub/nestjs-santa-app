@@ -3,7 +3,7 @@ import { Request } from '../components/Request';
 
 export function Home() {
   return (
-    <div className="min-h-screen overflow-auto w-full m-0 dark: bg-gradient-to-b from-blue-300 to-green-200">
+    <div className="min-h-screen overflow-auto w-full m-0 dark: bg-gradient-to-tr from-blue-300 to-green-200">
       <Container>
         <div className="space-y-6">
           <div className="text-4xl font-bold italic text-center">
