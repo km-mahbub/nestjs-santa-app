@@ -72,9 +72,6 @@ export function Request() {
     } else {
       form.clearErrors('username');
     }
-
-    setUserAdded(false);
-    setFormErrors([]);
   }, 500);
 
   useEffect(() => {
@@ -83,7 +80,8 @@ export function Request() {
     } else {
       form.clearErrors('username');
     }
-
+    setUserAdded(false);
+    setFormErrors([]);
     return () => {
       debouncedOnChange.cancel();
     };
@@ -92,11 +90,6 @@ export function Request() {
   const handleUsernameChange = async (event: any) => {
     const { value } = event.target;
     setUsername(value);
-  };
-
-  const handleTextChange = (_: any) => {
-    setUserAdded(false);
-    setFormErrors([]);
   };
 
   return (
