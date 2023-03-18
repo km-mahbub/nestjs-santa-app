@@ -1,0 +1,22 @@
+<html>
+  <head>
+    <meta charset='UTF-8' />
+    <title>Christmas Request List</title>
+  </head>
+  <body>
+    <h1>Christmas Request List</h1>
+    {{#if pendingRequests.length}}
+      <ul>
+        {{#each pendingRequests}}
+          <li>
+            <strong>{{username}}</strong>
+            <p>Address: {{address}}</p>
+            <p>Wish: {{requestText}}</p>
+          </li>
+        {{/each}}
+      </ul>
+    {{else}}
+      <p>No users found.</p>
+    {{/if}}
+  </body>
+</html>

@@ -4,7 +4,7 @@
     "titleBar.activeBackground": "#184650",
     "titleBar.activeForeground": "#F7FCFD"
   },
-  "cSpell.words": ["nestjs", "Fastify", "prestart", "hookform"],
+  "cSpell.words": ["nestjs", "Fastify", "prestart", "hookform", "birthdate"],
   "files.eol": "\n",
   "debug.terminal.clearBeforeReusing": true,
   "editor.rulers": [85],

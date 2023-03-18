@@ -1,4 +1,3 @@
-import { zodResolver } from '@hookform/resolvers/zod';
 import { ComponentProps } from 'react';
 import {
   FormProvider,
@@ -7,7 +6,6 @@ import {
   SubmitHandler,
   useFormContext,
 } from 'react-hook-form';
-import { ZodSchema, TypeOf } from 'zod';
 
 interface FieldErrorProps {
   name?: string;
@@ -19,7 +17,6 @@ export function FieldError({ name }: FieldErrorProps) {
   } = useFormContext();
 
   if (!name) return null;
-
   const error = errors[name];
 
   if (!error) return null;

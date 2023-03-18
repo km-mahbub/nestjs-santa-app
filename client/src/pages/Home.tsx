@@ -13,7 +13,7 @@ export function Home() {
           </div>
           <div className="text-2xl text-center">
             <span className="text-red-200">
-              Ho ho ho, what you want for christmas?
+              Ho ho ho, what do you want for christmas?
             </span>
           </div>
         </div>
