@@ -1,3 +1,3 @@
 # Santa App
 
-Build with React and Nestjs
+Built with React and Nestjs
