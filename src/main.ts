@@ -20,9 +20,8 @@ async function bootstrap() {
     root: path.join(__dirname, '..', 'public'),
     prefix: '/',
   });
-  logger.log(__dirname);
-  await app.listen(PORT, () => {
-    logger.log(`Listening at http://localhost:${PORT}`);
+  await app.listen(PORT, '0.0.0.0', (err, addr) => {
+    logger.log(`Listening at ${addr}`);
   });
 }
 bootstrap();
