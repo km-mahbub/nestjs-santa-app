@@ -1,4 +1,4 @@
-FROM node:18-alpine as client-base
+FROM node:18-slim as client-base
 
 # RUN apk --no-cache add --virtual g++ gcc libgcc libstdc++ linux-headers make python2 
 
@@ -22,7 +22,7 @@ COPY ./client /app/
 
 RUN yarn build
 
-FROM node:18-alpine as server-base
+FROM node:18-slim as server-base
 
 WORKDIR /app
 
@@ -41,10 +41,11 @@ RUN yarn build && yarn cache clean --force
 
 RUN rm -rf node_modules && yarn install --production --frozen-lockfile
 
-FROM node:18-alpine as production
+FROM node:18-slim as production
 WORKDIR /app
 
-RUN apk update && apk upgrade
+RUN apt-get update && apt-get upgrade
+
 COPY --from=server-production ./app/package.json /app/package.json
 COPY --from=server-production ./app/node_modules /app/node_modules
 COPY --from=server-production ./app/dist /app/src
